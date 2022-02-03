@@ -136,7 +136,7 @@ class Game {
 
 
            player.update();
-        this.showRank()
+        //this.showRank()
          } 
          if (keyIsDown(UP_ARROW)) {
           player.positionY += 10;
@@ -217,6 +217,5 @@ end(){
 console.log("game over")
 }
 
-showrank(){}
 
 }
