@@ -123,7 +123,6 @@ class Game {
 
          if (player.positionY > finshLine) {
            gameState = 2;
-           this.update(gameState);
            // uncomment correct one out of these to increment the rank of a player by 1 and update it to the database.
            
           //  player.rank += 1;
@@ -137,7 +136,7 @@ class Game {
 
 
            player.update();
-           //this.showRank();
+        this.showRank()
          } 
          if (keyIsDown(UP_ARROW)) {
           player.positionY += 10;
@@ -214,4 +213,10 @@ class Game {
       collected.remove();
     });
   }
+end(){
+console.log("game over")
+}
+
+showrank(){}
+
 }
